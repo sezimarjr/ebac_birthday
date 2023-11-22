@@ -1,0 +1,44 @@
+@use "header";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav-pills .nav-link.active {
+  background-color: #ea05ff9d;
+  color: #fff;
+  &:hover {
+    // filter: brightness(1.1);
+    // color: #fff;
+  }
+}
+.nav-link {
+  color: #000;
+  background-color: transparent;
+  &:hover {
+    color: #ea05ff9d;
+  }
+}
+.book-img {
+  max-width: 125px;
+}
+.button {
+  font-family: "Poppins", sans-serif;
+  width: 200px;
+  border: none;
+  border-radius: 24px;
+  background-color: #fca8a8;
+  font-size: 32px;
+
+  color: #fff;
+}
+.bi-hearts {
+  color: red;
+}
+.bi-stars {
+  color: rgb(255, 255, 16);
+}

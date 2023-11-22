@@ -1,0 +1,82 @@
+.header {
+  // background-image: url(/src/images/background-2.png);
+  background: linear-gradient(#ff8102, #e7a0fd);
+  // background-image: url(/src/images/background-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__bia {
+    max-width: 450px;
+    width: 100%;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+  }
+  &__informations {
+    color: #ffffff;
+    font-family: "Baloo 2", sans-serif;
+    padding-top: 40px;
+    line-height: 80px;
+
+    &__title {
+      font-size: 120px;
+      font-weight: 800;
+    }
+    &__subtitle {
+      font-weight: 500;
+      font-size: 40px;
+    }
+    &__name {
+      font-size: 60px;
+      color: rgb(180, 46, 180);
+      font-weight: bold;
+    }
+    &__paragraph {
+      line-height: normal;
+      font-size: 18px;
+      max-width: 400px;
+    }
+    &__date {
+      font-family: "Poppins", sans-serif;
+      line-height: normal;
+      font-size: 40px;
+      span {
+        color: #47025c;
+        font-size: 24px;
+        font-weight: 400;
+      }
+    }
+    &__social {
+      color: rgb(175, 0, 175);
+      font-size: 32px;
+      display: flex;
+
+      gap: 18px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      &__informations {
+        &__title {
+          font-size: 90px;
+        }
+      }
+    }
+  }
+  @media (max-width: 425px) {
+    .header {
+      &__bia {
+        display: none;
+      }
+      &__informations {
+        &__title {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}
