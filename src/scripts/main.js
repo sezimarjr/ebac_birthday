@@ -1,4 +1,4 @@
-const dataDoEvento = new Date("Nov 28, 2023 00:00:00");
+const dataDoEvento = new Date("Nov 28, 2024 00:00:00");
 const timeStampDoEvento = dataDoEvento.getTime();
 
 const contaAsHoras = setInterval(function () {
@@ -26,7 +26,7 @@ const contaAsHoras = setInterval(function () {
 
   document.getElementById(
     "contador"
-  ).innerHTML = `${diasAteOEvento}d ${horasAteOEvento}h ${minutosAteOEvento}m ${segundosAteOEvento}s`;
+  ).innerHTML = `${diasAteOEvento}d ${horasAteOEvento}h ${minutosAteOEvento}m ${segundosAteOEvento}s até o evento`;
 
   if (distanciaAteOEvento < 0) {
     clearInterval(contaAsHoras);
